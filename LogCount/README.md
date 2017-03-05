@@ -20,3 +20,7 @@ eg:
 ### For 'Log_Max_k.py'
 * the same function as 'Log_Max_k.java', but it's stand-alone(Do not run it in hadoop)
 * For me, it is used to check the correctness of MR2.
+
+### Usage
+* hadoop jar LogCount.jar LogCount InputDir OutputDir
+* hadoop jar Log_Max_k.jar Log_Max_k k InputDir OutputDir

@@ -113,6 +113,7 @@ public class Log_Max_k {
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(IntWritable.class);
 		conf.set("K_value", otherArgs[0]);
+		job.setNumReduceTasks(1);  // set the reducer num to 1
 		for (int i = 1; i < otherArgs.length - 1; ++i){
 			FileInputFormat.addInputPath(job, new Path(otherArgs[i]));
 		}
